@@ -7,12 +7,12 @@ load_dotenv()
 # VARS
 
 get_queue = {}
-BOT_TOKEN = getenv("BOT_TOKEN")
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "10"))
-ASSISTANT_PREFIX = list(getenv("ASSISTANT_PREFIX", ".").split())
-MONGO_DB_URI = getenv("MONGO_DB_URI")
+BOT_TOKEN = getenv("BOT_TOKEN","5220279497:AAFP3rYDxyVPC44H8bNYvOQ8mI1zT2WMGNY")
+API_ID = int(getenv("API_ID", "11259645"))
+API_HASH = getenv("API_HASH","2a0091696eecde4ae7c3f76cbf848c53")
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "80"))
+ASSISTANT_PREFIX = list(getenv("ASSISTANT_PREFIX", ",").split())
+MONGO_DB_URI = getenv("MONGO_DB_URI",")
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "").split()))
 OWNER_ID = list(map(int, getenv("OWNER_ID", "").split()))
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
